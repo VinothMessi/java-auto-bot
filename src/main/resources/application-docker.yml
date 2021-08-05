@@ -1,0 +1,3 @@
+docker-hub:
+  host: localhost
+  port: 4444
