@@ -1,5 +1,5 @@
-browser: firefox
+browser: chrome
 
 spring:
   profiles:
-    active: docker
+    active: local

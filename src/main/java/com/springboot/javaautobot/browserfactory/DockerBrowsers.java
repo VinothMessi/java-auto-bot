@@ -25,7 +25,6 @@ public class DockerBrowsers {
     @Bean
     @ConditionalOnProperty(name = "browser", havingValue = "chrome")
     public WebDriver chrome() throws MalformedURLException {
-        System.out.println("http://" + hub.getHost() + ":" + hub.getPort() + "/wd/hub");
         return new RemoteWebDriver(new URL("http://" + hub.getHost() + ":" + hub.getPort() + "/wd/hub"),
                 DesiredCapabilities.chrome());
     }

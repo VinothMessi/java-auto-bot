@@ -14,6 +14,7 @@ public class VisaRegistration extends BaseTest {
     public void visaRegistration() {
         System.out.println("Visa Registration Test");
         browser.get("http://www.google.com");
+        System.out.println("Page Title:" + browser.getTitle());
         Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
         browser.quit();
     }
